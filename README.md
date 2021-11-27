@@ -12,9 +12,14 @@ Roshani Shrestha: Login/Register Page (HTML templates and Flask sessions)
 Thomas Yu (Project Manager): Assisting with HTML templates and database work (user accounts and blogs)
 
 ## Notable things involving CSS:
-We can add in animations with the transition keyword with the keyframes auto generated
-We can see if a user has clicked a text area with :focus which can give us different results
-We can differentiate input types by putting "[type = ""] next to input
+- We can add in animations with the transition keyword with the keyframes auto generated  
+- We can see if a user has clicked a text area with :focus which can give us different results  
+- We can use :not to specify elements that are not in a certain state  
+    - ie `input:not(:focus)`
+- We can select HTML elements by their attributes   
+    - ie differentiating input types with `input[type = ""]`
+- The ordering of CSS rules matters. If multiple rules on the same property of the same element are declared, the last rule declared is the one applied.  
+    - There are more rules on precedence: http://tutorials.jenkov.com/css/precedence.html
 
 ## Description of Website/App:
 Bord's Weblog Hosting Site allows the user to create their own blogs and view the blogs of others. To use Bord's Weblog Hosting Site, you need an account, so make sure to register! Logging in takes a user to their personal blog page, where they can create a new blog or view an old one. Within each blog they can add, edit, and remove entries. They are also able to edit or remove the blog itself. Lastly, users are able view the blogs and blog entries of other users.

@@ -31,7 +31,7 @@ K20: Throw Some Forking STUYLE On It
      </h2>
 
      <form action="finishEditEntry" method="post">
-      Title: <input type="text" name="title" value="{{ newEntryTitle }}">
+      Title: <input class="titleHeading" type="text" name="title" value="{{ newEntryTitle }}">
       <br><br/>
       <textarea input type="text" name="paragraph_text" cols="50" rows="10">{{entryText}}</textarea>
       <br><br>
@@ -39,9 +39,6 @@ K20: Throw Some Forking STUYLE On It
       <input type=hidden name="blogTitle" value="{{blogTitle}}">
       <input type="submit" value="Finish Editing">
      </form>
-
-
-     <br><br>
 
      <form action="blogpage" method="post">
        <input type="hidden" name="username" value="{{username}}">
@@ -55,7 +52,7 @@ K20: Throw Some Forking STUYLE On It
       <input type="hidden" name="username" value="{{username}}">
       <input type="hidden" name="ogTitle" value="{{entryTitle}}">
       <input type="hidden" name="ogBlogTitle" value="{{blogTitle}}">
-      <button type="submit" name="sub1">Delete Entry</button>
+      <button class="delete" type="submit" name="sub1">Delete Entry</button>
      </form>
 
 

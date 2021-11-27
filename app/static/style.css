@@ -18,6 +18,7 @@ h1{
 
 h2{
     color: goldenrod;
+    font-size: 1.25em;
 }
 
 form{
@@ -29,6 +30,7 @@ input, textarea{
 }
 
 input, textarea, button{
+    font-family: cursive;
     transition: 0.7s;
 }
 
@@ -41,7 +43,6 @@ input:not(:focus), textarea:not(:focus){
 }
 
 button, input[type="submit"]{
-    font-family: cursive;
     background-color: darkolivegreen;
     color: antiquewhite;
     border-style: solid;
@@ -52,18 +53,31 @@ button, input[type="submit"]{
     margin: 1%;
 }
 
+input {
+    width: 30%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 12px;
+}
+
 .titleHeading{
-    font-family: cursive;
     font-size: 110%;
 }
 
 textarea{
-    font-family: cursive;
     font-size: 100%;
 }
 
 button:hover, input[type="submit"]:hover{
     background-color: rgb(138, 185, 26);
+}
+
+.delete{
+    background-color: salmon;
+}
+
+.delete:hover{
+    background-color: maroon;
 }
 
 a{
@@ -75,9 +89,34 @@ a:hover{
     font-weight: bolder;
 }
 
-input {
+.entryName{
+    background-color: darkgoldenrod !important;
+}
+
+.entryName:hover{
+    background-color: burlywood !important;
+}
+
+.uneditableEntryName{
     width: 30%;
     padding: 1%;
     margin: 1%;
     border-radius: 12px;
-  }
+    margin: auto;
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+}
+
+.blog{
+    background-color: rgb(216,228,188);
+    margin: 2% 10%;
+    padding: 1% 2%;
+    border-radius: 10%;
+}
+
+.blogEntry{
+    background-color: wheat;
+    margin: 2% 10%;
+    padding: 1% 2%;
+    border-radius: 10%;
+}

@@ -30,19 +30,18 @@ K20: Throw Some Forking STUYLE On It
      </h1>
 
 
-        <form action="/userblogs" method="POST">
-            <input type="hidden" name="usersub" value="{{username}}">
-            <button type="submit">Back to Blogs</button>
-        </form>
-        <h1>
-           {{blogTitle}}
-        </h1>
-        <h2>
-            Author: {{username}}
-        </h2>
-    </body>
+    <form action="/userblogs" method="POST">
+        <input type="hidden" name="usersub" value="{{username}}">
+        <button type="submit">Back to Blogs</button>
+    </form>
+    <h1>
+        {{blogTitle}}
+    </h1>
+    <h2>
+        Author: {{username}}
+    </h2>
 
-    <p>Description: </p>
+    <p style="text-decoration: underline overline;">Description: </p>
     <p style="white-space: pre-wrap;">{{ blogDescription }}</p>
 
     {% if sessionU %}
@@ -50,7 +49,6 @@ K20: Throw Some Forking STUYLE On It
         <input type="hidden" name="blogTitle" value="{{blogTitle}}">
         <button type="submit" name="sub2">Edit Blog</button>
       </form>
-      <br>
     {% endif %}
 
     {% if sessionU %}
@@ -58,28 +56,29 @@ K20: Throw Some Forking STUYLE On It
         <input type="hidden" name="blogTitle" value="{{blogTitle}}">
         <button type="submit" name="sub2">Add New Entry</button>
       </form>
-      <br>
     {% endif %}
 
     <!-- Displays all the entries in this blog. Buttons are present to edit them. -->
     {% for key, value in entriesList.items() %}
+      <div class="blogEntry">
       {% if sessionU %}
           <form action="editEntry" method="post">
             <input type="hidden" name="blogTitle" value="{{blogTitle}}">
-            <input type="submit" name="entrysub" value="{{key}}">
+            <input class="entryName" type="submit" name="entrysub" value="{{key}}">
           </form>
       {% else %}
-          <h3>
+          <h3 class="uneditableEntryName">
             {{key}}
           </h3>
       {% endif %}
           <p style="white-space: pre-wrap;">{{ value }}</p>
+      </div>
     {% endfor %}
 
     <br>
     <br>
 
-
+    </body>
 
 
 </html>
