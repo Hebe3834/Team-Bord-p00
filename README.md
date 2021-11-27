@@ -1,6 +1,8 @@
 # Bord's Weblog Hosting Site by Team Bord
 
 ## Roster with Roles:
+Justin Zou, Hebe Huang: Styling (CSS)
+
 Austin Ngan: Creation/editing blogs (Python and Database)
 
 Mark Zhu: Personal blog page and blog pages of others (HTML templates and Flask to connect the database to the webpage)
