@@ -11,6 +11,7 @@ P00: User's Personal Blog Page
 
    <head>
      <title> EDITING PAGE </title>
+     <link rel="stylesheet" href="static/style.css">
    </head>
 
    <nav>
@@ -22,9 +23,10 @@ P00: User's Personal Blog Page
    <body>
      <h1>
        Bord's Weblog Hosting Site
-       <br>
-       Create a New Blog
      </h1>
+     <h2>
+       Create a New Blog
+     </h2>
      <h2>
        {{ error }}
      </h2>
@@ -39,7 +41,7 @@ P00: User's Personal Blog Page
       <input type="submit" value="Create Blog">
      </form>
 
-     <br><br>
+     <br>
 
      <form action="userblogs" method="post">
       <input type="hidden" name="usersub" value="{{username}}">

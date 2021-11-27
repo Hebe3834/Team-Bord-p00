@@ -1,0 +1,60 @@
+/* The Brave Hamsters: Justin Zou, Hebe Huang
+SoftDev
+K20: Throw Some Forking STUYLE On It
+2021-11-30
+
+*/
+
+body{
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    color: darkgoldenrod;
+}
+
+h2{
+    color: goldenrod;
+}
+
+form{
+    color: darkred;
+}
+
+input, textarea{
+    border-radius: 2%;
+}
+
+input[name="title"]:focus, textarea:focus{
+    transition: 0.5s;
+    background-color: rgb(208, 230, 202);
+}
+
+input[name="title"]:not(:focus), textarea:not(:focus){
+    transition: 0.5s;
+    background-color: aliceblue;
+}
+
+button, input[type="submit"]{
+    font-family: cursive;
+    background-color: darkolivegreen;
+    color: antiquewhite;
+    border-style: solid;
+    padding: 5px 10px;
+    font-size: 90%;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: forestgreen;
+    font-weight: bolder;
+}

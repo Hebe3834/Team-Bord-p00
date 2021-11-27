@@ -11,6 +11,7 @@ P00: User's Personal Blog Page
 
    <head>
      <title> BLOG PAGE </title>
+     <link rel="stylesheet" href="static/style.css">
    </head>
 
    <!-- navbar -->
@@ -23,15 +24,15 @@ P00: User's Personal Blog Page
    <body>
      <h1>
        Bord's Weblog Hosting Site
-       <br>
-       <br>
+     </h1>
+     <h2>
        {% if sessionU %}
             Hey, {{username}}! Welcome to your blogs!
        {% else %}
             Welcome to the blogs of {{username}}!
        {% endif %}
        <br>
-     </h1>
+     </h2>
 
      {% if sessionU %}
      <form action="createBlog" method="post">
