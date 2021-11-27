@@ -64,3 +64,10 @@ a:hover{
     color: forestgreen;
     font-weight: bolder;
 }
+
+input {
+    width: 50%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 12px;
+  }
