@@ -28,13 +28,15 @@ input, textarea{
     border-radius: 2%;
 }
 
-input[name="title"]:focus, textarea:focus{
-    transition: 0.5s;
+input, textarea, button{
+    transition: 0.7s;
+}
+
+input:focus, textarea:focus{
     background-color: rgb(208, 230, 202);
 }
 
-input[name="title"]:not(:focus), textarea:not(:focus){
-    transition: 0.5s;
+input:not(:focus), textarea:not(:focus){
     background-color: aliceblue;
 }
 
@@ -48,6 +50,10 @@ button, input[type="submit"]{
     border-radius: 8px;
     cursor: pointer;
     margin: 1%;
+}
+
+button:hover, input[type="submit"]:hover{
+    background-color: rgb(138, 185, 26);
 }
 
 a{
