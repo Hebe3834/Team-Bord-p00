@@ -11,6 +11,11 @@ Roshani Shrestha: Login/Register Page (HTML templates and Flask sessions)
 
 Thomas Yu (Project Manager): Assisting with HTML templates and database work (user accounts and blogs)
 
+## Notable things involving CSS:
+We can add in animations with the transition keyword with the keyframes auto generated
+We can see if a user has clicked a text area with :focus which can give us different results
+We can differentiate input types by putting "[type = ""] next to input
+
 ## Description of Website/App:
 Bord's Weblog Hosting Site allows the user to create their own blogs and view the blogs of others. To use Bord's Weblog Hosting Site, you need an account, so make sure to register! Logging in takes a user to their personal blog page, where they can create a new blog or view an old one. Within each blog they can add, edit, and remove entries. They are also able to edit or remove the blog itself. Lastly, users are able view the blogs and blog entries of other users.
 

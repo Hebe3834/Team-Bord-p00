@@ -52,16 +52,15 @@ button, input[type="submit"]{
     margin: 1%;
 }
 
-input[type="text"]{
+.titleHeading{
     font-family: cursive;
     font-size: 110%;
 }
 
 textarea{
-    padding: 8%;
+    font-family: cursive;
+    font-size: 100%;
 }
-
-
 
 button:hover, input[type="submit"]:hover{
     background-color: rgb(138, 185, 26);
