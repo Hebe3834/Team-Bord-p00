@@ -3,13 +3,21 @@ SoftDev
 K20: Throw Some Forking STUYLE On It
 2021-11-30
 
+Note: Invalid username/passwords trigger the login page animation again, may be annoying
+Possible solution is to make a duplicate login.html without the animations and use that for invalid user/pass
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 body{
     background-color: antiquewhite;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+}
+
+#siteTitle{
+    font-family: 'Architects Daughter', cursive;
 }
 
 h1{
@@ -119,4 +127,34 @@ a:hover{
     margin: 2% 10%;
     padding: 1% 2%;
     border-radius: 10%;
+}
+
+.welcome{
+    display: inline-block;
+    overflow: hidden;
+    animation: reveal 5s;
+}
+
+@keyframes reveal{
+    0% {opacity:0; padding: 15% 0% 25%; font-size: 5em;} /* fadin from 0% to 40% */
+    40% {opacity:1;}
+    50% {padding: 15% 0% 25%; font-size: 5em;} /* fsize change from 50% to 70% */
+    70% {padding: 20% 0% 25%; font-size: 2em;}
+    80% {padding: 20% 0% 25%; } /* padding changes: 50% to 70% because of fsize change + 80% to 100% to show content */
+    100% {padding: 0%;} 
+}
+
+.banner{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide 5s;
+}
+
+@keyframes slide{
+    0% {opacity:0; width: 0px; padding: 15% 0% 25%; font-size: 5em;} 
+    50% {opacity:0; width: 0px; padding: 15% 0% 25%; font-size: 5em;} /* slidein + fsize change from 50% to 70% */
+    70% {width: 558.56px;  opacity:1; padding: 20% 0% 25%; font-size: 2em;}
+    80% {padding: 20% 0% 25%; } /* padding changes: 50% to 70% because of fsize change + 80% to 100% to show content */
+    100% {padding: 0%;}
 }
