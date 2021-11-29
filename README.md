@@ -12,7 +12,7 @@ Roshani Shrestha: Login/Register Page (HTML templates and Flask sessions)
 Thomas Yu (Project Manager): Assisting with HTML templates and database work (user accounts and blogs)
 
 ## Notable things involving CSS:
-- Commentting can be done with `<COMMENT>`
+- Commentting can be done with `/* <COMMENT> */`
 - We can add in animations with the transition keyword with the keyframes auto generated  
     - We can also use the animation property and `@keyframes`
 - We can see if a user has clicked a text area with :focus which can give us different results  
